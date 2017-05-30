@@ -1,0 +1,105 @@
+// out: null
+
+/* Parametric mixin for headings */
+
+.headingStyle(@paramColor: #000; @paramSize: 2em) {
+    color: @paramColor; // this accepts a font color passed through as an argument
+    font-size: @paramSize; // this accepts a font size passed through as an argument
+    font-weight: bold; // this is static code... not everything has to be dynamic!
+    line-height: @paramSize; // this reuses the same font size as before to change line height
+    margin-top: @paramSize / 2;
+    margin-bottom: @paramSize / 2;
+    text-transform: uppercase;
+}
+/* End parametric mixin for headings */
+
+
+/* Parametric mixin for Rounded Corners and Background Color */
+.roundCorBkgdColor(@paramRoundCor: 6px; @paramBkgColor: blue) {
+    -moz-border-radius: @paramRoundCor;
+    -webkit-border-radius: @paramRoundCor;
+    border-radius: @paramRoundCor;
+    background-color: @paramBkgColor; 
+}
+/* End Parametric mixin for Rounded Corners and Background Color */
+
+/* Parametric mixin for box-shadow */
+
+.dropShadow(@paramX: 10px, @paramY: 10px, @paramBlur: 10px, @paramColor: purple) {
+    -webkit-box-shadow: @paramX @paramY @paramBlur @paramColor;
+    box-shadow: @paramX @paramY @paramBlur @paramColor;
+}
+
+/* End Parametric mixin for box-shadow */
+
+/* Parametric mixin for gradient */
+
+.linGradient (@paramDirection: left, @paramStartColor: #ccc, @paramEndColor: blue)  {
+    background: @paramStartColor; /* For browsers that do not support gradients */
+    background: -o-linear-gradient(@paramDirection, @paramStartColor, @paramEndColor); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(@paramDirection, @paramStartColor, @paramEndColor); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to @paramDirection, @paramStartColor, @paramEndColor); /* Standard syntax */
+}
+    
+/* End Parametric mixin for gradient */
+
+
+
+.headStyling(@paramColor: #000; @paramSize: 2em) {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: @paramSize;
+    color: @paramColor;
+    margin: .5em 0;
+}
+
+.expand() {
+   transform: scale(1.1);
+   display: inline-block;
+}
+
+.opacityFifty() {
+    opacity: 0.5;
+}
+
+.opacitySeventy() {
+    opacity: 0.7;
+}
+
+.textUandI () {
+    text-decoration: underline;
+    font-style: italic;
+    display: inline-block;
+}
+
+.textUcaseBold () {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.imageFlip () {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.dropShadow () {
+    box-shadow: 5px 5px 15px @color1;
+}
+
+.border () {
+    border: solid @darkColor 1px;   
+}
+
+.textFancy () {
+    text-shadow: 2px 2px @lightColor4;
+    font-style: italic;
+}
+
+.imageBorder () {
+    border: 1.5px solid;
+    border-radius: 7px;
+}

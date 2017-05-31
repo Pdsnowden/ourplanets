@@ -18,6 +18,8 @@ MOBILE STYLESHEET
 
 body {
     font-family: Lato, sans-serif;
+    background-color: @color5;
+    
 }
 header {
     h1 {
@@ -28,7 +30,8 @@ header {
 }
 
 main {
-    padding: 2em;
+    padding: 1.5em;
+    background-color: bisque;
     h2 {
         font-family: "Baloo Bhaina", Georgia, serif;
         font-size: 1.7em;
@@ -53,6 +56,7 @@ main {
         font-family: Lato, sans-serif;
         font-size: 1.25em;
     }
+    
     span {
         font-weight: bold;
     }
@@ -60,6 +64,9 @@ main {
 
 li {
     font-weight: bold;
+}
+li:hover {
+    text-shadow: 2px 2px 0 yellow, -2px -2px 0 lightgreen;
 }
 
 #planText {
@@ -80,8 +87,11 @@ head {
 
 h1, #headlineStyle {
     margin: 30px 2px 0 30px;
-    background-color: @color1;
-    color: @color5;
+    color: @lightColor3;
+}
+
+.credits {
+    color: @lightColor;
 }
 
 
@@ -92,6 +102,10 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
 */
 /* STYLING FOR TABLET IN PORTRAIT */
 @media only screen and (min-width: 481px) {
+    body {
+    max-width: 900px;
+    margin: 0 auto;
+}
     
 }
 /* 

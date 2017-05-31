@@ -69,14 +69,14 @@ li:hover {
   font-style: normal;
 }
 p,
-#imgCredit {
+#planCopyright {
   font-style: italic;
   font-size: .9em;
 }
 h1,
 #headlineStyle {
   margin: 30px 2px 0 30px;
-  color: #d7b77d;
+  color: orangered;
 }
 .credits {
   color: #ffffff;

@@ -64,7 +64,7 @@ var planet;
                   $("#planImg").attr("src", result.url);
                 }  
                 $("#planText").text(result.explanation);
-                $("#videoTitle").text(result.title);
+                $("#planName").text(result.title);
                 }
             });
         });

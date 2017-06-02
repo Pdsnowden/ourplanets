@@ -62,11 +62,23 @@ main {
     }
 }
 
-li {
+ ul li {
     font-weight: bold;
+    cursor: pointer;
+    background-color: lightblue;
+    margin: 1em auto;
+    text-align: center;
+
 }
+
+
+
 li:hover {
     text-shadow: 2px 2px 0 yellow, -2px -2px 0 lightgreen;
+}
+
+img {
+    margin: 0 0 .5em 0;
 }
 
 #planText {
@@ -79,6 +91,7 @@ li:hover {
 p, #planCopyright {
     font-style: italic;
     font-size: .9em;
+    margin: 0 0 .5em 0;
 }
 
 head {
@@ -86,8 +99,9 @@ head {
 }
 
 h1, #headlineStyle {
-    margin: 30px 2px 0 30px;
+    margin: 10px 2px 0 0;
     color: orangered;
+    text-align: center;
 }
 
 .credits {
@@ -104,18 +118,26 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
 @media only screen and (min-width: 481px) {
     body {
     max-width: 900px;
-    margin: 0 auto;
-}
+    margin: 0 auto;       
+    }
+    
+    ul li {
+        display: inline-block;
+    }
+
     
 }
+
+    
+
+
+
+
 /* 
 DESKTOP STYLESHEET
 The following CSS affects all screen sizes larger than 1024 pixels wide.
 */
 
-@media only screen and (min-width: 1025px) {
-
+@media only screen and (min-width: 1025px) { 
     
 }
-
-

@@ -18,20 +18,21 @@ MOBILE STYLESHEET
 
 body {
     font-family: Lato, sans-serif;
-    background-color: @color5;
+ 
     
 }
 header {
     h1 {
         font-family: "Baloo Bhaina", Georgia, serif; 
-        font-size: 3.5em;
-        text-shadow: 3px 3px 0 #eee;
+        font-size: 3.6em;
+        text-shadow: 3px 3px 0 #fff4db;
     }
 }
 
 main {
-    padding: 1.5em;
-    background-color: bisque;
+    padding: 1.5em 1.5em .75em 1.5em;
+    margin-bottom: 2em;
+    background-color: #fff4db;
     h2 {
         font-family: "Baloo Bhaina", Georgia, serif;
         font-size: 1.7em;
@@ -61,52 +62,81 @@ main {
         font-weight: bold;
     }
 }
-
- ul li {
+h3 {
+    color: #1a2131;
+}
+ nav ul li {
+    color: #1a2131;
     font-weight: bold;
     cursor: pointer;
-    background-color: lightblue;
-    margin: 1em auto;
+    background-color: #8cbade;
+    margin: 1em 5.5em;
     text-align: center;
+    padding: 10px 0;
 
 }
 
 
 
-li:hover {
-    text-shadow: 2px 2px 0 yellow, -2px -2px 0 lightgreen;
+nav ul li:hover {
+  //    text-shadow: 2px 2px 0 yellow, -2px -2px 0 lightgreen;
+    background-color: #ffc73d;
 }
 
 img {
-    margin: 0 0 .5em 0;
-}
-
-#planText {
-    font-style: normal;
+    margin: .3em 0 0 0;
     
 }
 
-
-
-p, #planCopyright {
+#planCopyright {
+    color: #1a2131;
     font-style: italic;
     font-size: .9em;
-    margin: 0 0 .5em 0;
+    margin: .25em 0 .5em 0;
 }
+
+#planText {
+    color: #1a2131;
+    font-style: normal;
+    margin-top: .6em;
+}
+
 
 head {
     
 }
 
-h1, #headlineStyle {
-    margin: 10px 2px 0 0;
+h1 {
+    margin: 10px 1.2em 0 1.2em;
     color: orangered;
     text-align: center;
+    background-color: #1a2131;
+    padding-top: 5px;
+}
+footer p {
+    font-size: .85em;
+    margin: 5px 0;
+    padding-top: 5px;
+ 
 }
 
-.credits {
-    color: @lightColor;
+footer ul li a {
+    color: #fff4db;
+    text-decoration: none;
+    font-size: .75em;
+    padding: 5px 10px 0 20px;
+ 
 }
+
+
+.credits {
+    color: #fff4db;
+    margin: 1.5em 0;
+    background-color: #1a2131;
+    padding: .5em 2em;
+    box-shadow: 3px 3px 40px rgba(28,56,78,.70), -3px -3px 40px rgba(28,56,78,.70); 
+}
+
 
 
 
@@ -121,7 +151,7 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
     margin: 0 auto;       
     }
     
-    ul li {
+    nav ul li {
         display: inline-block;
     }
 

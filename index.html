@@ -29,16 +29,28 @@ ga('send', 'pageview');
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="scripts/nasa-api.js"></script>
     
+<style>
+body {
+    background-image: url(images/star-2211589_1920_rev.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+        }
+    
+</style>
+  
+    
 </head>
     
 <body>
-    <header>
+    <header class="section group">
+        <div class="col span_12_of_12">
         <h1 class="headlineStyle">Planets of our Solar System</h1>
-        
+        </div>
     </header>
     
     <main>
-    <div id="planLinks">
+    <nav id="planLinks">
         <h3>To view a planet, click on the planet name twice.</h3>
        
     <ul id="planList">
@@ -55,13 +67,13 @@ ga('send', 'pageview');
         <li class="uranus">Uranus</li>
         <li class="neptune">Neptune</li>
     </ul> 
-    </div>
+    </nav>
  
     <div>
 <!--        <h2 id="planName">Title</h2>-->
         
         <img id="planImg" src="images/2818891443planets.jpg" alt="placeoholder pic of solar system planets">
-        <p id="planCopyright">This picture was taken from space by a space monkey.</p>
+        <p id="planCopyright">Image Credits: Flickr 2818891443planets</p>
         <p id="planText">Donec et risus dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc elementum diam eros, eu auctor mi lobortis eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sed quam interdum ex fringilla laoreet in vel lorem. Nulla dictum scelerisque varius. Nulla rhoncus vestibulum accumsan. Nunc cursus fermentum ligula, hendrerit efficitur purus.</p>
      </div>
         
@@ -75,14 +87,21 @@ ga('send', 'pageview');
         </section>
 -->
    
-    </main>
+    
     
     <footer>
         <div class="credits">
+            <h4>Photo Credits</h4>
+            <ul>
+                <li><a href="https://pixabay.com/en/star-milky-way-sky-night-sky-2211589/" target="_blank">Background</a></li>
+             
+                <li><a href="https://www.flickr.com/photos/11304375@N07/2818891443" target="_blank">Planets</a></li>
+            </ul>
             <p>Website designed and constructed by: Cindy Brandt, Susan Feuerbach, Rebecca Kennedy and Paul Snowden.</p>
             <p>copyright 2017</p>
         </div>
     </footer>
+        </main>
     <script src="js/nasa-api.js"></script>
 </body>
 </html>

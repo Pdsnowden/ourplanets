@@ -25,14 +25,15 @@ header {
     h1 {
         font-family: "Baloo Bhaina", Georgia, serif; 
         font-size: 3.6em;
-        text-shadow: 3px 3px 0 #fff4db;
+        text-shadow: 3px 3px 0 @color5;
     }
 }
 
 main {
     padding: 1.5em 1.5em .75em 1.5em;
     margin-bottom: 2em;
-    background-color: #fff4db;
+    background-color: @color5;
+    border-radius: 3px;
     h2 {
         font-family: "Baloo Bhaina", Georgia, serif;
         font-size: 1.7em;
@@ -62,30 +63,51 @@ main {
         font-weight: bold;
     }
 }
-h3 {
-    color: #1a2131;
+h2 {
+    color: @color4;
 }
- nav ul li {
-    color: #1a2131;
+ nav {
     font-weight: bold;
-    cursor: pointer;
-    background-color: #8cbade;
-    margin: 1em 5.5em;
-    text-align: center;
-    padding: 10px 0;
+    margin: .5em 1em;
+    
+     ul {
+         li {
+             color: @color4;
+             cursor: pointer;
+             background-color: @color1; /*for compatibility with older 
+             browsers*/
+             background-image: linear-gradient(@color1,@lightColor1);
+             text-align: center;
+             border-radius: 3px;
+             margin: 1em 3em;
+             padding: 10px 1em;
+             box-shadow: 0px 1px 6px -2px black;
+             &:link {
+                background-color: @color1;
+                background-image: linear-gradient(@color1,@lightColor1);
+            }
 
+             &:hover {
+                 background-color: @color2;
+                 background-image: linear-gradient(@color2,@lightColor2);
+            }
+             &:active {
+                 background-color: @color3;
+                 background-image: linear-gradient(@color3,@lightColor3);
+             }
+         }   
+     }
 }
+              
 
 
 
-nav ul li:hover {
-  //    text-shadow: 2px 2px 0 yellow, -2px -2px 0 lightgreen;
-    background-color: #ffc73d;
-}
 
 img {
     margin: .3em 0 0 0;
-    
+    border-radius: 3px;
+    border: 1px solid @color5;
+    box-shadow: 3px 3px 15px rgba(28,56,78,1); 
 }
 
 #planCopyright {
@@ -96,9 +118,13 @@ img {
 }
 
 #planText {
-    color: #1a2131;
+    color: @color4;
     font-style: normal;
     margin-top: .6em;
+}
+p, #nasaStyle {
+    color: @color4;
+    text-decoration: none;
 }
 
 
@@ -107,21 +133,22 @@ head {
 }
 
 h1 {
-    margin: 10px 1.2em 0 1.2em;
-    color: orangered;
+    margin: .5em 1.2em .3em 1.2em;
+    color: @color6;
     text-align: center;
-    background-color: #1a2131;
+    background-color: @color4;
     padding-top: 5px;
 }
 footer p {
     font-size: .85em;
     margin: 5px 0;
     padding-top: 5px;
+    color: @color5; 
  
 }
 
 footer ul li a {
-    color: #fff4db;
+    color: @color5;
     text-decoration: none;
     font-size: .75em;
     padding: 5px 10px 0 20px;
@@ -130,11 +157,13 @@ footer ul li a {
 
 
 .credits {
-    color: #fff4db;
+    color: @color5;
     margin: 1.5em 0;
-    background-color: #1a2131;
+    background-color: @color4;
+    border-radius: 3px;
     padding: .5em 2em;
-    box-shadow: 3px 3px 40px rgba(28,56,78,.70), -3px -3px 40px rgba(28,56,78,.70); 
+    border: 1px solid @color5;
+    box-shadow: 3px 3px 15px rgba(28,56,78,1); 
 }
 
 

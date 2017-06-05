@@ -8,14 +8,14 @@ Programmer: Susan Feuerbach
 /*  SECTIONS  */
 .section {
     clear: both;
-    margin: 0 1%;
+    margin: 2% 1%;
 }
 
 /*  COLUMN SETUP  */
 .col {
     display: block;
     float: left;
-    margin: 1% 0 1% 1%;
+    margin: -4% 0 -4% 1%;
     padding: 1% 1%;
 }
 
@@ -41,7 +41,7 @@ Programmer: Susan Feuerbach
 
 
 /*  GO INTO COLUMNS AT 769 PX OR HIGHER */
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 482px) {
 
     .span_12_of_12 {
 	width: 100%;

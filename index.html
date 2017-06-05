@@ -31,6 +31,7 @@ ga('send', 'pageview');
     
 <style>
 body {
+    background-color: #1a2131; /*for compatibility with older browsers*/
     background-image: url(images/star-2211589_1920_rev.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -51,22 +52,31 @@ body {
     
     <main>
     <nav id="planLinks">
-        <h3>To view a planet, click on the planet name.</h3>
-       
-    <ul id="planList">
+        <h2>To view a planet, click on the planet name.</h2>
+        
+    <div class="section group">
+    
 <!--
         <li><a href="index.html" class="mercury">Mercury</a></li> 
         <li><a href="index.html" class="venus">Venus</a></li>
 -->
-        <li class="mercury">Mercury</li> 
-        <li class="venus">Venus</li>
-        <li class="earth">Earth</li>
-        <li class="mars">Mars</li>
-        <li class="jupiter">Jupiter</li>
-        <li class="saturn">Saturn</li>
-        <li class="uranus">Uranus</li>
-        <li class="neptune">Neptune</li>
-    </ul> 
+      <ul id="planList" class="col span_4_of_12">
+            <li class="mercury">Mercury</li> 
+            <li class="venus">Venus</li>
+            <li class="earth">Earth</li>
+      </ul>
+      <ul class="col span_4_of_12">
+            <li class="mars">Mars</li>
+            <li class="jupiter">Jupiter</li>
+            <li class="saturn">Saturn</li>
+      </ul >
+      <ul class="col span_4_of_12">
+            <li class="uranus">Uranus</li>
+            <li class="neptune">Neptune</li>
+      </ul>
+   
+      
+    </div>
     </nav>
  
     <div>
@@ -74,7 +84,7 @@ body {
         
         <img id="planImg" src="images/2818891443planets.jpg" alt="placeoholder pic of solar system planets">
         <p id="planCopyright">Image Credits: Flickr 2818891443planets</p>
-        <p id="planText">Donec et risus dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc elementum diam eros, eu auctor mi lobortis eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sed quam interdum ex fringilla laoreet in vel lorem. Nulla dictum scelerisque varius. Nulla rhoncus vestibulum accumsan. Nunc cursus fermentum ligula, hendrerit efficitur purus.</p>
+        <p id="planText">The solar system we call home is located in an outer spiral arm of the vast Milky Way galaxy. It consists of the sun (our star) and everything that orbits around it. This includes the eight planets and their natural satellites (such as our moon), dwarf planets and their satellites, as well as asteroids, comets and countless particles of smaller debris. <br> Source: <a href="https://solarsystem.nasa.gov/planets/solarsystem/indepth" target="_blank" id="nasaStyle">Nasa</a></p>
      </div>
         
 <!--
@@ -97,9 +107,10 @@ body {
              
                 <li><a href="https://www.flickr.com/photos/11304375@N07/2818891443" target="_blank">Planets</a></li>
             </ul>
+          
             <p>Website designed and constructed by: Cindy Brandt, Susan Feuerbach, Rebecca Kennedy and Paul Snowden.</p>
             <p>copyright 2017</p>
-        </div>
+      </div>
     </footer>
         </main>
     <script src="js/nasa-api.js"></script>

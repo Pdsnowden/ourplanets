@@ -1,3 +1,5 @@
+//out: style.css
+
 /*
 File Name: style.less
 Date: 05/26/17
@@ -5,12 +7,12 @@ Programmer: Susan Feuerbach
 */
 
 /* Original Color Palette Source:   05-29-17 Susan Feuerbach
-color.adobe.com   
+color.adobe.com
 */
 
 
 /*
-MOBILE STYLESHEET 
+MOBILE STYLESHEET
 */
 @import 'palette.less';
 @import 'mixins.less';
@@ -18,13 +20,13 @@ MOBILE STYLESHEET
 
 body {
     font-family: Lato, sans-serif;
- 
-    
+
+
 }
 header {
     h1 {
-        font-family: "Baloo Bhaina", Georgia, serif; 
-        font-size: 3.6em;
+        font-family: "Baloo Bhaina", Georgia, serif;
+        font-size: 3.2em;
         text-shadow: 3px 3px 0 @color5;
     }
 }
@@ -58,23 +60,24 @@ main {
         font-family: Lato, sans-serif;
         font-size: 1.25em;
     }
-    
+
     span {
         font-weight: bold;
     }
 }
 h2 {
     color: @color4;
+    padding-bottom: 5px;
 }
  nav {
     font-weight: bold;
     margin: .5em 1em;
-    
+
      ul {
          li {
              color: @color4;
              cursor: pointer;
-             background-color: @color1; /*for compatibility with older 
+             background-color: @color1; /*for compatibility with older
              browsers*/
              background-image: linear-gradient(@color1,@lightColor1);
              text-align: center;
@@ -95,10 +98,10 @@ h2 {
                  background-color: @color3;
                  background-image: linear-gradient(@color3,@lightColor3);
              }
-         }   
+         }
      }
 }
-              
+
 
 
 
@@ -107,7 +110,7 @@ img {
     margin: .3em 0 0 0;
     border-radius: 3px;
     border: 1px solid @color5;
-    box-shadow: 3px 3px 15px rgba(28,56,78,1); 
+    box-shadow: 3px 3px 15px rgba(28,56,78,1);
 }
 
 #planCopyright {
@@ -127,24 +130,29 @@ p, #nasaStyle {
     text-decoration: none;
 }
 
+#planImg {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
 
 head {
-    
+
 }
 
 h1 {
     margin: .5em 1.2em .3em 1.2em;
     color: @color6;
     text-align: center;
-    background-color: @color4;
+  //  background-color: @color4;
     padding-top: 5px;
 }
 footer p {
     font-size: .85em;
     margin: 5px 0;
     padding-top: 5px;
-    color: @color5; 
- 
+    color: @color5;
+
 }
 
 footer ul li a {
@@ -152,7 +160,7 @@ footer ul li a {
     text-decoration: none;
     font-size: .75em;
     padding: 5px 10px 0 20px;
- 
+
 }
 
 
@@ -163,40 +171,48 @@ footer ul li a {
     border-radius: 3px;
     padding: .5em 2em;
     border: 1px solid @color5;
-    box-shadow: 3px 3px 15px rgba(28,56,78,1); 
+    box-shadow: 3px 3px 15px rgba(28,56,78,1);
 }
 
 
 
 
 /*
-TABLET STYLESHEET 
+TABLET STYLESHEET
 The following CSS affects all screen sizes larger than 480 pixels wide.
 */
 /* STYLING FOR TABLET IN PORTRAIT */
 @media only screen and (min-width: 481px) {
     body {
     max-width: 900px;
-    margin: 0 auto;       
+    margin: 0 auto;
     }
-    
+
     nav ul li {
         display: inline-block;
     }
 
-    
+
 }
 
-    
 
 
 
 
-/* 
+
+/*
 DESKTOP STYLESHEET
 The following CSS affects all screen sizes larger than 1024 pixels wide.
 */
 
-@media only screen and (min-width: 1025px) { 
-    
+@media only screen and (min-width: 1025px) {
+
+    header {
+        h1 {
+            font-family: "Baloo Bhaina", Georgia, serif;
+            font-size: 6em;
+            text-shadow: 3px 3px 0 @color5;
+        }
+    }
+
 }

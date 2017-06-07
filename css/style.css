@@ -7,6 +7,8 @@ Programmer: Susan Feuerbach
 /* Original Color Palette Source:   05-29-17 Susan Feuerbach
 color.adobe.com
 */
+/* Colors re-chosen based on photos as inspiration:   06-05-17 Susan Feuerbach
+*/
 /*
 MOBILE STYLESHEET
 */
@@ -93,8 +95,14 @@ nav ul li:active {
   background-color: #d2691e;
   background-image: linear-gradient(#d2691e, #eaa16c);
 }
+#instructions {
+  font-weight: normal;
+}
+#planName {
+  margin-top: 30px;
+}
 img {
-  margin: .3em 0 0 0;
+  margin: .2em 0 0 0;
   border-radius: 3px;
   border: 1px solid #fff4db;
   box-shadow: 3px 3px 15px #1c384e;
